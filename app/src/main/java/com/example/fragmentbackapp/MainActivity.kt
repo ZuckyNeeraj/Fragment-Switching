@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         //initially the fragment that has to be loaded
         supportFragmentManager.beginTransaction().apply {
+            setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
             replace(R.id.flframe, fragmentOne)
             commit()
         }
