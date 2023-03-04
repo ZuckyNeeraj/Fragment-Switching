@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         val fragmentOne = Fragment1()
 
-        //initially the fragment that has to be laoded
+        //initially the fragment that has to be loaded
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flframe, fragmentOne)
             commit()
